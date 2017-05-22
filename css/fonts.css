@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'OpenSans'; /* Имя шрифта */
+	src: url(../fonts/OpenSans/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+	font-family: 'OpenSansSemiBold'; /* Имя шрифта */
+	src: url(../fonts/OpenSans/OpenSans-Semibold.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+	font-family: 'OpenSansExtraBold'; /* Имя шрифта */
+	src: url(../fonts/OpenSans/OpenSans-ExtraBold.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+	font-family: 'OpenSansLight'; /* Имя шрифта */
+	src: url(../fonts/OpenSans/OpenSans-Light.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+	font-family: 'OpenSansBold'; /* Имя шрифта */
+	src: url(../fonts/OpenSans/OpenSans-Bold.ttf); /* Путь к файлу со шрифтом */
+}
+
