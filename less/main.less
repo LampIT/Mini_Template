@@ -23,6 +23,9 @@ body{
 .osans-extrabold{
 	font-family: 'OpenSansExtraBold';
 }
+.lato-regular{
+	font-family: "LatoRegular";
+}
 
 header{
 	
@@ -299,14 +302,18 @@ section{
 }
 
 .bevels{
-	height: 700px;
+	height: 100vh;
 	background-image: url(../images/bg.png);
 	background-size: cover;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	.container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	&-big-text{
 		font-size: 45px;
 		.osans-bold;
@@ -314,6 +321,7 @@ section{
 		text-align: center;
 		position: relative;
 		padding: 0 20px;
+		margin-bottom: 50px;
 		&:before{
 			content: "“";
 			position: absolute;
@@ -329,6 +337,7 @@ section{
 			font-size: 110px;
 		}
 	}
+<<<<<<< HEAD
 .contact-form{
 	.about-header{
 				.osans-bold;
@@ -341,7 +350,147 @@ section{
 		display: block;
 	}
 }
+=======
 
+	.name{
+		.osans-bold;
+		font-size: 24px;
+		color: #fff;
+		display: inline-block;
+		text-transform: uppercase;
+		padding-top: 15px;
+		&.up-line{
+			position: relative;
+			&:before{
+				content: "";
+				position: absolute;
+				width: 50px;
+				height: 5px;
+				background-color: @accent-orange;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+}
+
+.team{
+	&-block{
+		margin-top: 130px;
+		margin-bottom: 100px;
+	}
+	&-item{
+		cursor: default;
+		margin-bottom: 10px;
+		padding: 30px 20px;
+		text-align: center;
+		box-shadow: inset 0 2px 0 @accent-orange;
+		transition: box-shadow .5s ease;
+		position: relative;
+		overflow: hidden;
+		z-index: 2;
+		&:before{
+			content: "";
+			height: 2px;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			background-color: @accent-orange;
+			transition: height .25s ease;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin-left: 50%;
+			z-index: -2;
+			transform: translateY(-500%) translateX(-50%) scale(5);
+			transition: transform 1s ease, border-radius .5s ease, height 2s ease;
+			background-color: #f0f0f0;
+		}
+		&-img{
+			margin-bottom: 25px;
+			img{
+				border-radius: 50%;
+				border: 4px solid #f2f2f2;
+			}
+		}
+		&-name{
+			.osans-bold;
+			font-size: 20px;
+			text-transform: uppercase;
+			color: #0d0d0d;
+		}
+		&-position{
+			.lato-regular;
+			font-size: 15px;
+			color: #999;
+			margin-bottom: 15px;
+			padding-bottom: 15px;
+			&.small-subline{
+				position: relative;
+				&:after{
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 20px;
+					height: 4px;
+					background-color: #cccccc;
+					transition: background-color .5s ease;
+				}
+			}
+		}
+		&-descr{
+			.osans-regular;
+			font-size: 16px;
+			color: @light-gray;
+		}
+>>>>>>> origin/master
+
+		&-social{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 20px;
+			a{
+				text-decoration: none;
+				color: #999;
+				font-size: 20px;
+				margin-right: 15px;
+				transition: color .25s ease;
+				&:hover{
+					color: @accent-orange;
+				}
+			}
+		}
+
+		&:hover{
+			&:before{
+				height: 6px;
+			}
+			&:after{
+				top: 0;
+				transform: translateY(0%) translateX(-50%) scale(20);
+			}
+
+			.team-item-position{
+				&.small-subline{
+					&:after{
+						background-color: @accent-red;
+					}
+				}
+			}
+		}
+	}
 }
 .header-client{
 	display: block;
@@ -363,6 +512,44 @@ section{
 	
 }
 
+.header-client{
+	display: block;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	.osans-bold;
+	color: #fff;
+	margin-bottom: 60px;
+}
+.header-client{
+	display: block;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	.osans-bold;
+	color: #fff;
+	margin-bottom: 60px;
+}
+
+.icon-client{
+	img{
+		max-width: 100%;
+		border: 2px solid rgba(256,256,256,0.3);
+		padding: 10px;
+	}
+	
+}
+
+.icon-client{
+	img{
+		max-width: 100%;
+		border: 2px solid rgba(256,256,256,0.3);
+		padding: 10px;
+	}
+	
+}
 
 @media only screen and (max-width: 1920px) {
 	header{
