@@ -19,3 +19,8 @@
 	src: url(../fonts/OpenSans/OpenSans-Bold.ttf); /* Путь к файлу со шрифтом */
 }
 
+@font-face {
+	font-family: 'LatoRegular'; /* Имя шрифта */
+	src: url(../fonts/Lato/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+

@@ -17,6 +17,9 @@ body {
 .osans-extrabold {
   font-family: 'OpenSansExtraBold';
 }
+.lato-regular {
+  font-family: "LatoRegular";
+}
 header {
   background-image: url(../images/background.png);
   height: 100vh;
@@ -255,12 +258,17 @@ section .section-header p {
   background-color: #f39e16;
 }
 .bevels {
-  height: 700px;
+  height: 100vh;
   background-image: url(../images/bg.png);
   background-size: cover;
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.bevels .container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .bevels-big-text {
@@ -270,6 +278,7 @@ section .section-header p {
   text-align: center;
   position: relative;
   padding: 0 20px;
+  margin-bottom: 50px;
 }
 .bevels-big-text:before {
   content: "“";
@@ -284,6 +293,162 @@ section .section-header p {
   top: -20%;
   right: 0;
   font-size: 110px;
+}
+.bevels .name {
+  font-family: 'OpenSansBold';
+  font-size: 24px;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+.bevels .name.up-line {
+  position: relative;
+}
+.bevels .name.up-line:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-color: #f39e16;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.team-block {
+  margin-top: 130px;
+  margin-bottom: 100px;
+}
+.team-item {
+  cursor: default;
+  margin-bottom: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: inset 0 2px 0 #f39e16;
+  transition: box-shadow 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+.team-item:before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #f39e16;
+  transition: height .25s ease;
+}
+.team-item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 50%;
+  z-index: -2;
+  transform: translateY(-500%) translateX(-50%) scale(5);
+  transition: transform 1s ease, border-radius 0.5s ease, height 2s ease;
+  background-color: #f0f0f0;
+}
+.team-item-img {
+  margin-bottom: 25px;
+}
+.team-item-img img {
+  border-radius: 50%;
+  border: 4px solid #f2f2f2;
+}
+.team-item-name {
+  font-family: 'OpenSansBold';
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #0d0d0d;
+}
+.team-item-position {
+  font-family: "LatoRegular";
+  font-size: 15px;
+  color: #999;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.team-item-position.small-subline {
+  position: relative;
+}
+.team-item-position.small-subline:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 4px;
+  background-color: #cccccc;
+  transition: background-color 0.5s ease;
+}
+.team-item-descr {
+  font-family: 'OpenSans';
+  font-size: 16px;
+  color: #737373;
+}
+.team-item-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.team-item-social a {
+  text-decoration: none;
+  color: #999;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: color .25s ease;
+}
+.team-item-social a:hover {
+  color: #f39e16;
+}
+.team-item:hover:before {
+  height: 6px;
+}
+.team-item:hover:after {
+  top: 0;
+  transform: translateY(0%) translateX(-50%) scale(20);
+}
+.team-item:hover .team-item-position.small-subline:after {
+  background-color: #e74c3c;
+}
+.header-client {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'OpenSansBold';
+  color: #fff;
+  margin-bottom: 60px;
+}
+.header-client {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'OpenSansBold';
+  color: #fff;
+  margin-bottom: 60px;
+}
+.icon-client img {
+  max-width: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+}
+.icon-client img {
+  max-width: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
 }
 @media only screen and (max-width: 1920px) {
   header .container {
